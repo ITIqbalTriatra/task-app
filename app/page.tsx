@@ -1,6 +1,6 @@
 "use client";
 
-import TaskPage from "@/app/pages/TaskPage";
+import TaskPage from "@/app/interfaces/pages/TaskPage";
 
 export default function Home() {
   return (

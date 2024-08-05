@@ -1,5 +1,5 @@
-import TaskList from "../components/TaskList";
-import TaskForm from "../components/TaskForm";
+import TaskList from "@/app/interfaces/components/TaskList";
+import TaskForm from "@/app/interfaces/components/TaskForm";
 import React, { useEffect } from "react";
 
 const TaskPage = () => {

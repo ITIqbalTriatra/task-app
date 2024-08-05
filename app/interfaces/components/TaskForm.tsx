@@ -1,4 +1,5 @@
-import { Button, Input } from "@material-tailwind/react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import React, { useState } from "react";
 
 const TaskForm = ({ onSubmit }: any) => {
@@ -13,10 +14,8 @@ const TaskForm = ({ onSubmit }: any) => {
 
   return (
     <form onSubmit={handleSubmit} className="py-10 text-center space-y-4">
-      <Input variant="outlined" width={2} value={title} onChange={(e) => setTitle(e.target.value)} label="Add New Task" crossOrigin="" />
-      <Button type="submit" placeholder="Add" size="md">
-        Add
-      </Button>
+      <Input width={2} value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Add Task" />
+      <Button type="submit">Add Task</Button>
     </form>
   );
 };
